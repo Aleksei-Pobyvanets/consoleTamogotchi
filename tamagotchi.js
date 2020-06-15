@@ -9,13 +9,20 @@ function start() {
 }
 
 
+class tmg {
+  constructor(){
 
-  var myPrivateMood = function() {
-    this.mood = 40
+    var myPrivateMood = function() {
+      this.mood = 40
+    }
+    var myPrivateHungry = function() {
+      this.hungry = 40
+    }
+    
   }
-  var myPrivateHungry = function() {
-    this.hungry = 40
-  }
+  
+}
+
 
 
 
@@ -23,7 +30,9 @@ class Tamagotchi{
   constructor(name, type){
     this.name = name
     this.type = type
+    
   }
+  
   statys() {
     console.log(`Вашего питомца зовут ${this.name}, он принадлежик к виду ${this.type}, его голод ${this.hungry}/100 ,его настроение ${this.mood}/100.`)
     console.log("Так как вы создали себе персонажа, вы можете начать ухаживать за ним, но будьте осторожны, если его голод/настроение будет превышать 120 поинтов игра закончиться")
